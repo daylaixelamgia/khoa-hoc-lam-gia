@@ -1,0 +1,188 @@
+
+.lg-auto-courses {
+    width: 100%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.lg-auto-courses * {
+    box-sizing: border-box;
+}
+
+.lg-auto-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.lg-auto-label {
+    display: inline-block;
+    color: #2e3a90;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.lg-auto-heading h2 {
+    color: #2e3a90;
+    font-size: 25px;
+    margin: 0 0 10px;
+}
+
+.lg-auto-heading p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.lg-auto-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.lg-auto-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 3px 12px rgba(0,0,0,.06);
+    transition: .25s;
+}
+
+.lg-auto-card:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,.12);
+    transform: translateY(-3px);
+}
+
+.lg-auto-image {
+    position: relative;
+    height: 210px;
+    overflow: hidden;
+}
+
+.lg-auto-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.lg-auto-tag {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: #2e3a90;
+    color: #fff;
+    padding: 7px 13px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.lg-auto-info {
+    padding: 18px;
+}
+
+.lg-auto-info h3 {
+    font-size: 19px;
+    color: #2e3a90;
+    margin: 0 0 10px;
+}
+
+.lg-auto-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 66px;
+    margin: 0 0 15px;
+}
+
+.lg-auto-details {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 12px 0;
+}
+
+.lg-auto-details div {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 7px 0;
+    font-size: 13px;
+}
+
+.lg-auto-details strong {
+    text-align: right;
+    color: #333;
+}
+
+.lg-auto-price {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.lg-auto-price span {
+    font-size: 13px;
+    color: #666;
+}
+
+.lg-auto-price strong {
+    font-size: 23px;
+    color: #d92332;
+}
+
+.lg-auto-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    border-radius: 5px;
+    background: #2e3a90;
+    color: #fff !important;
+    font-weight: bold;
+    text-decoration: none !important;
+    transition: .2s;
+}
+
+.lg-auto-button:hover {
+    background: #1d2769;
+    color: #fff !important;
+}
+
+.lg-auto-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: #f5f6fb;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.lg-auto-footer p {
+    margin: 0 0 5px;
+}
+
+.lg-auto-footer a {
+    color: #2e3a90;
+    font-weight: bold;
+}
+
+@media(max-width: 600px) {
+    .lg-auto-list {
+        grid-template-columns: 1fr;
+    }
+
+    .lg-auto-heading h2 {
+        font-size: 21px;
+    }
+
+    .lg-auto-image {
+        height: 200px;
+    }
+
+    .lg-auto-desc {
+        min-height: 0;
+    }
+}
